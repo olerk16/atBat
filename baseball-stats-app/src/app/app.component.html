@@ -1,0 +1,8 @@
+<h1>Baseball Stats</h1>
+<ul>
+  <li *ngFor="let player of players">
+    {{ player.name }} - Average: {{ player.average }}
+  </li>
+</ul>
+
+<app-player-chart [data]="players"></app-player-chart>
